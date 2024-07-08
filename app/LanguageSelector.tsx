@@ -17,7 +17,7 @@ const LanguageSelector = (props: Props) => {
                 <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
                     {props.language}
                 </MenuButton>
-                <MenuList >
+                <MenuList maxHeight={"300px"} overflowY={"auto"} >
                   {languages.map(([lang,version])=>(
                     <MenuItem
                      color={lang === props.language ? "blue.500" : ""} 
